@@ -64,21 +64,22 @@ int main()
     if (c == combinaciones)
     {
         cout << "EXITO: El conteo TEORICO y el conteo realizado por el algoritmo son iguales." << endl;
+
+        //Imprimir a CSV
+        char ruta[100];
+        sprintf_s(ruta, "../GenerarCombinacionesLex/Combinaciones/r_Combinaciones_%d_%d.csv", n, r);
+
+        ImprimirACSV(arregloComb, combinaciones, r, ruta);
+
+        //Imprimir arreglo de combinaciones
+        cout << "\nCombinaciones: \n" << endl;
+        ImprimirArreglo2D(arregloComb, combinaciones, r);
+
     }
     else
     {
-        cout << "ERROR: El conteo TEORICO y el conteo realizado por el NO algoritmo son iguales." << endl;
+        cout << "ERROR: El conteo TEORICO y el conteo realizado por el algoritmo NO son iguales." << endl;
     }
-
-    //Imprimir a CSV
-    char ruta[100];
-    sprintf_s(ruta, "../GenerarCombinacionesLex/Combinaciones/r_Combinaciones_%d_%d.csv", n, r);
-
-    ImprimirACSV(arregloComb, combinaciones, r, ruta);
-
-    //Imprimir arreglo de combinaciones
-    cout << "\nCombinaciones: \n" << endl;
-    ImprimirArreglo2D(arregloComb, combinaciones, r);
 
     //Destruccion de los arreglos
     delete[] A;
