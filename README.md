@@ -29,7 +29,7 @@ El algoritmo asume que los valores de n y r deben estar dentro de este rango:
 Es un prerequisito para el cálculo teórico de las combinaciones y del algoritmo en sí.
 
 ### Formato de salida
-El programa genera un archivo .csv el cual consiste en r columnas, las cuales cada una contiene un elemento de la combinación en m renglones. El nombre del archivo tiene el siguiente formato:
+El programa genera un archivo .csv el cual consiste en n columnas, las cuales cada una contiene un elemento de la combinación en m renglones. Donde n = r y m = número de combinaciones. El nombre del archivo tiene el siguiente formato:
 
 ```
 r_Combinaciones_n_r.csv
