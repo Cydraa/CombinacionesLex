@@ -41,7 +41,7 @@ y se encuentra en la ruta:
 ```
 
 ## Estructura del repositorio
-* Combinaciones: Aquí se encuentran los archivos .csv crudros de las combinaciones.
+* Combinaciones: Aquí se encuentran los archivos .csv de las combinaciones. En el repositorio se encuentran algunos ejemplos.
 * Documentation/html: Contiene los archivos necesarios para abrir la documentación de Doxygen.
 * Doxygen: Archivo de formato para Doxygen.
 * **<ins>Documentacion.lnk : Documentación del código fuente.</ins>**
