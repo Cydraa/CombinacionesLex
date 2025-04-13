@@ -7,6 +7,7 @@
 #include "FuncionesAuxiliares.hpp"
 #include "CapturaSegura.hpp"
 
+
 using std::cout;
 using std::cin;
 using std::endl;
@@ -21,7 +22,7 @@ int main()
     cout << "GENERADOR DE COMBINACIONES\n" << endl;
     cout << "Este programa calcula y genera las combinaciones de un conjunto A dados el valor de n y r." << endl;
     cout << "Acontinuacion, introduzca el valor de n y r: " << endl;
-
+    cout << "Valores validos: \n n >= 1 \n r >= 0 y r <= n\n" << endl;
     //Captura n y r
     do
     {
@@ -52,22 +53,32 @@ int main()
 
 
     //Generacion de combinaciones
-    cout << "\n\nCombinaciones: \n" << endl;
-    cout << "Numero de combinaciones TEORICA: " << Combinaciones(n, r) << "\n" << endl;
+    cout << "\n\nNumero de combinaciones TEORICA: " << Combinaciones(n, r) << endl;
 
     c = 1;
     GenCombinaciones(n, r, arregloComb,c);
 
     cout << "Numero de combinaciones calculada: " << c << "\n" << endl;
-
-    //Imprimir arreglo de combinaciones
-    ImprimirArreglo2D(arregloComb, combinaciones, r);
     
+    //Revision de coincidencia
+    if (c == combinaciones)
+    {
+        cout << "EXITO: El conteo TEORICO y el conteo realizado por el algoritmo son iguales." << endl;
+    }
+    else
+    {
+        cout << "ERROR: El conteo TEORICO y el conteo realizado por el NO algoritmo son iguales." << endl;
+    }
+
     //Imprimir a CSV
     char ruta[100];
     sprintf_s(ruta, "../GenerarCombinacionesLex/Combinaciones/r_Combinaciones_%d_%d.csv", n, r);
 
     ImprimirACSV(arregloComb, combinaciones, r, ruta);
+
+    //Imprimir arreglo de combinaciones
+    cout << "\nCombinaciones: \n" << endl;
+    ImprimirArreglo2D(arregloComb, combinaciones, r);
 
     //Destruccion de los arreglos
     delete[] A;

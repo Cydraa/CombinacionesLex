@@ -98,7 +98,7 @@ void ImprimirACSV(int** arreglo, int m, int n, char ruta[])
 
     archivo.close();
 
-    cout << "\n\nEl archivo generado de los datos se encuentra en: \n" << ruta << endl;
+    cout << "\nEl archivo generado de los datos se encuentra en: \n" << ruta << endl;
 }
 
 void GenCombinaciones(int n, int r, int** arregloComb, int& c)
