@@ -14,14 +14,6 @@ using std::ofstream;
 * \file
 */
 
-/**
-* \brief Aleatoriza valores dentro de un rango dado.
-*
-* \param inicio Inicio del rango.
-* \param fin Fin del rango.
-* \return Un n&uacute;mero al azar dentro del rango especificado.
-*/
-int Aleatorizar(int inicio, int fin);
 
 /**
 * \brief Calcula el factorial de un n&uacute;mero n.

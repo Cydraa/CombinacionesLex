@@ -1,10 +1,5 @@
 #include "FuncionesAuxiliares.hpp"
 
-int Aleatorizar(int inicio, int fin)
-{
-    return inicio + rand() % (fin - inicio + 1);
-}
-
 void CleanBuffer() {
     char c;
     while ((c = getchar()) != EOF && c != '\n');

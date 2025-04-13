@@ -1,0 +1,23 @@
+var NAVTREEINDEX0 =
+{
+"_captura_segura_8hpp.html":[0,0,0],
+"_captura_segura_8hpp.html#a6e4396a8bced1666fcd13976c3554dca":[0,0,0,0],
+"_captura_segura_8hpp_source.html":[0,0,0],
+"_funciones_auxiliares_8hpp.html":[0,0,1],
+"_funciones_auxiliares_8hpp.html#a100f3f14b065d36c47076c556242632f":[0,0,1,8],
+"_funciones_auxiliares_8hpp.html#a238990b5bba01c11340ed0c921f5921a":[0,0,1,3],
+"_funciones_auxiliares_8hpp.html#a2f515bb271efed0d696c8675c8871977":[0,0,1,6],
+"_funciones_auxiliares_8hpp.html#a335e197258ffbc61625e838ccbf8ad70":[0,0,1,2],
+"_funciones_auxiliares_8hpp.html#a596211850b35af32b07fd1911c3894f9":[0,0,1,5],
+"_funciones_auxiliares_8hpp.html#a5f70baddbb45636e604ccc60d34a10bd":[0,0,1,0],
+"_funciones_auxiliares_8hpp.html#a7505de247d968ce9e9220090f4c51ad5":[0,0,1,9],
+"_funciones_auxiliares_8hpp.html#a8d9e8d8d9d3bd0eb1e406ccd0413856e":[0,0,1,1],
+"_funciones_auxiliares_8hpp.html#ac9d026d451c9664ca0bbab40376ff1fb":[0,0,1,7],
+"_funciones_auxiliares_8hpp.html#af8b9f9d9087a28f002e29282d3de8806":[0,0,1,4],
+"_funciones_auxiliares_8hpp_source.html":[0,0,1],
+"files.html":[0,0],
+"globals.html":[0,1,0],
+"globals_func.html":[0,1,1],
+"index.html":[],
+"pages.html":[]
+};
