@@ -5,7 +5,7 @@ Autor: Ana Paulina Sortillón Sortillón
 
 ## Descripción del algoritmo
 
-El algoritmo genera las r-combinaciones C(n,r) de tamaño r de un arreglo de índices a{n} = {0,1,...,n} en orden lexicográfico creciente. Primeramente, el algoritmo genera un arreglo s{r} de tamaño r, el cual se llenará de números crecientes a partir del 0 (asumiendo que los índices del lenguaje de programacion empiezan en 0). Este primer arreglo es la primera combinación.
+El algoritmo genera las r-combinaciones C(n,r) de tamaño r de un arreglo de índices a{n} = {0,1,...,n-1} en orden lexicográfico creciente. Primeramente, el algoritmo genera un arreglo s{r} de tamaño r, el cual se llenará de números crecientes a partir del 0 (asumiendo que los índices del lenguaje de programacion empiezan en 0). Este primer arreglo es la primera combinación.
 
 Luego, el algoritmo entra en un ciclo en donde recorrerá el índice m del arreglo de tal manera que encuentre un índice tal que este no sea igual o mayor a valor máximo (n). Si esto es así, el algoritmo actualiza m al siguiente valor y a los elementos a la derecha de m para asegurar de que sean los mínimos sucesores. En cada ciclo exitoso, el algoritmo incrementa un contador para calcular el número de combinaciones generadas.
 
