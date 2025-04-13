@@ -5,6 +5,40 @@ Autor: Ana Paulina Sortillón Sortillón
 
 ## Descripción del algoritmo
 
+El algoritmo genera las r-combinaciones C(n,r) de tamaño r de un arreglo de índices a{n} = {0,1,...,n} en orden lexicográfico creciente. Primeramente, el algoritmo genera un arreglo s{r} de tamaño r, el cual se llenará de números crecientes a partir del 0 (asumiendo que los índices del lenguaje de programacion empiezan en 0). Este primer arreglo es la primera combinación.
+
+Luego, el algoritmo entra en un ciclo en donde recorrerá el índice m del arreglo de tal manera que encuentre un índice tal que este no sea igual o mayor a valor máximo (n). Si esto es así, el algoritmo actualiza m al siguiente valor y a los elementos a la derecha de m para asegurar de que sean los mínimos sucesores. En cada ciclo exitoso, el algoritmo incrementa un contador para calcular el número de combinaciones generadas.
+
+El algoritmo termina cuando m = 0 y ha generado la última combinación.
+
+Como se menciono anteriormente, el arreglo original y las combinaciones que genera el algoritmo son arreglos de índices enteros, lo cual es conveniente ya que esta generalización del orden puede ser utilizada por otra función para mapear arreglos de caracteres (un alfabeto) y generar sus combinaciones (palabras), manteniendo así el orden lexicográfico creciente.
+
+Adicionalmente, en el programa se adjunta el cálculo de las combinaciones de manera teórica por la fórmula: 
+
+```
+C(n,r) = n! / (n-r)! r!
+```
+
+y compara el valor obtenido teórico con el contador obtenido, en caso de ser iguales, el algoritmo generó con éxito todas las combinaciones posibles.
+
+### Validación de entrada
+El algoritmo asume que los valores de n y r deben estar dentro de este rango: 
+- n >= 1
+- r >= 0 y r <= n
+
+Es un prerequisito para el cálculo teórico de las combinaciones y del algoritmo en sí.
+
+### Formato de salida
+El programa genera un archivo .csv el cual consiste en r columnas, las cuales cada una contiene un elemento de la combinación en m renglones. El nombre del archivo tiene el siguiente formato:
+
+```
+r_Combinaciones_n_r.csv
+```
+y se encuentra en la ruta:
+
+```
+../GenerarCombinacionesLex/Combinaciones/r_Combinaciones_%d_%d.csv
+```
 
 ## Estructura del repositorio
 * Combinaciones: Aquí se encuentran los archivos .csv crudros de las combinaciones.
