@@ -37,7 +37,7 @@ r_Combinaciones_n_r.csv
 y se encuentra en la ruta:
 
 ```
-../GenerarCombinacionesLex/Combinaciones/r_Combinaciones_%d_%d.csv
+../GenerarCombinacionesLex/Combinaciones/r_Combinaciones_n_r.csv
 ```
 
 ## Estructura del repositorio
