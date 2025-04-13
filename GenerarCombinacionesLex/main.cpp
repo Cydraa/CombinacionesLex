@@ -53,7 +53,7 @@ int main()
 
 
     //Generacion de combinaciones
-    cout << "\n\nNumero de combinaciones TEORICA: " << Combinaciones(n, r) << endl;
+    cout << "\n\nNumero de combinaciones TEORICA: " << combinaciones << endl;
 
     c = 1;
     GenCombinaciones(n, r, arregloComb,c);
@@ -72,8 +72,8 @@ int main()
         ImprimirACSV(arregloComb, combinaciones, r, ruta);
 
         //Imprimir arreglo de combinaciones
-        cout << "\nCombinaciones: \n" << endl;
-        ImprimirArreglo2D(arregloComb, combinaciones, r);
+        //cout << "\nCombinaciones: \n" << endl;
+        //ImprimirArreglo2D(arregloComb, combinaciones, r);
 
     }
     else
